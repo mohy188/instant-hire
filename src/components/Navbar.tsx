@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -16,7 +17,14 @@ const Navbar = () => {
           <a href="#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">How It Works</a>
           <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
           <a href="#categories" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Categories</a>
-          <Button size="sm" className="rounded-lg font-semibold">Start Matching</Button>
+          <div className="flex items-center gap-3">
+            <Button variant="outline" size="sm" className="rounded-[7px] font-medium" asChild>
+              <Link to="/auth?mode=login">Login</Link>
+            </Button>
+            <Button size="sm" className="rounded-[7px] font-semibold" asChild>
+              <Link to="/auth?mode=signup">Sign Up</Link>
+            </Button>
+          </div>
         </div>
 
         <button
@@ -33,7 +41,14 @@ const Navbar = () => {
           <a href="#how-it-works" className="block text-sm text-muted-foreground hover:text-foreground">How It Works</a>
           <a href="#pricing" className="block text-sm text-muted-foreground hover:text-foreground">Pricing</a>
           <a href="#categories" className="block text-sm text-muted-foreground hover:text-foreground">Categories</a>
-          <Button size="sm" className="w-full rounded-lg font-semibold">Start Matching</Button>
+          <div className="flex gap-3 pt-1">
+            <Button variant="outline" size="sm" className="flex-1 rounded-[7px] font-medium" asChild>
+              <Link to="/auth?mode=login">Login</Link>
+            </Button>
+            <Button size="sm" className="flex-1 rounded-[7px] font-semibold" asChild>
+              <Link to="/auth?mode=signup">Sign Up</Link>
+            </Button>
+          </div>
         </div>
       )}
     </nav>
