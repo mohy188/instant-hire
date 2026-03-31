@@ -1,16 +1,32 @@
-const categories = [
-  "Web Development",
-  "Mobile Development",
-  "UI/UX Design",
-  "Data Science",
-  "DevOps & Cloud",
-  "Marketing",
-  "Video Editing",
-  "Copywriting",
-  "Virtual Assistant",
-  "Customer Support",
-  "Sales",
-  "Accounting",
+import {
+  Monitor,
+  Smartphone,
+  PenTool,
+  BarChart3,
+  Cloud,
+  Megaphone,
+  Film,
+  FileText,
+  Headset,
+  MessageSquare,
+  TrendingUp,
+  Calculator,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+
+const categories: { name: string; icon: LucideIcon }[] = [
+  { name: "Web Development", icon: Monitor },
+  { name: "Mobile Development", icon: Smartphone },
+  { name: "UI/UX Design", icon: PenTool },
+  { name: "Data Science", icon: BarChart3 },
+  { name: "DevOps & Cloud", icon: Cloud },
+  { name: "Marketing", icon: Megaphone },
+  { name: "Video Editing", icon: Film },
+  { name: "Copywriting", icon: FileText },
+  { name: "Virtual Assistant", icon: MessageSquare },
+  { name: "Customer Support", icon: Headset },
+  { name: "Sales", icon: TrendingUp },
+  { name: "Accounting", icon: Calculator },
 ];
 
 const CategoriesSection = () => {
@@ -23,12 +39,13 @@ const CategoriesSection = () => {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-          {categories.map((cat) => (
+          {categories.map(({ name, icon: Icon }) => (
             <div
-              key={cat}
-              className="border border-border rounded-lg px-4 py-4 text-sm font-medium text-foreground hover:bg-surface-elevated transition-colors cursor-pointer text-center"
+              key={name}
+              className="border border-border rounded-lg px-4 py-5 text-sm font-medium text-foreground hover:bg-surface-elevated transition-colors cursor-pointer flex flex-col items-center gap-3 text-center"
             >
-              {cat}
+              <Icon className="w-5 h-5 text-muted-foreground" strokeWidth={1.5} />
+              {name}
             </div>
           ))}
         </div>
