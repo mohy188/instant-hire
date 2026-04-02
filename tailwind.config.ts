@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Arvo", "serif"],
+        heading: ["Arvo", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",

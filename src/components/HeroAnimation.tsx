@@ -224,7 +224,7 @@ const HeroAnimation = () => {
               }}
             >
               <div className="w-2 h-2 rounded-full bg-foreground animate-pulse" />
-              <span className="text-[11px] font-medium text-foreground">Connected · Live</span>
+              <span className="text-[11px] font-medium text-foreground">Connected · Live · End-to-End Encrypted</span>
             </div>
           </div>
         </div>

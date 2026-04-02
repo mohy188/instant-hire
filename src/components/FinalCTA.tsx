@@ -8,7 +8,7 @@ const FinalCTA = () => {
           Stop Waiting. Start Meeting.
         </h2>
         <p className="text-lg text-background/60 mb-10 max-w-xl mx-auto leading-relaxed">
-          Join thousands of freelancers and employers already hiring face-to-face in real time.
+          Join thousands of freelancers and employers already hiring face-to-face in real time with end-to-end encrypted sessions.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="secondary" className="rounded-lg font-semibold h-12 px-8 text-base">
