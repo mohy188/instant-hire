@@ -86,7 +86,7 @@ const Auth = () => {
       <div className="min-h-screen bg-background flex flex-col items-center justify-center px-4">
         <div className="w-full max-w-[420px]">
           <Link to="/" className="block text-center mb-10">
-            <span className="text-lg font-bold tracking-tight text-foreground">OnlineChatWorkers.com</span>
+            <span className="text-lg tracking-tight text-foreground font-heading"><span className="font-normal">Instant</span><span className="font-bold">Hire</span></span>
           </Link>
           <div className="border border-border rounded-xl p-8 bg-background">
             <h1 className="text-2xl font-bold text-foreground text-center">Reset Password</h1>
