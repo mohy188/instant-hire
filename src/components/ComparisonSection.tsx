@@ -2,9 +2,11 @@ import { Check, X } from "lucide-react";
 
 const rows = [
   { feature: "Real-time video interviews", us: true, them: false },
+  { feature: "End-to-end encrypted chat", us: true, them: false },
   { feature: "Instant matching", us: true, them: false },
   { feature: "No bidding wars", us: true, them: false },
   { feature: "No escrow or payment disputes", us: true, them: false },
+  { feature: "Equal access for all users", us: true, them: false },
   { feature: "Transparent flat pricing", us: true, them: false },
   { feature: "Start in under 60 seconds", us: true, them: false },
   { feature: "Platform fees on every transaction", us: false, them: true },
