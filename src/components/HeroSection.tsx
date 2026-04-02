@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-video-call.png";
+import HeroAnimation from "@/components/HeroAnimation";
 
 const HeroSection = () => {
   return (
     <section className="pt-28 pb-16 md:pt-36 md:pb-24 px-6">
       <div className="container max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Left — Copy */}
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight text-foreground mb-5">
@@ -28,15 +28,9 @@ const HeroSection = () => {
             <p className="text-xs text-muted-foreground mt-4">Free to join · No credit card required</p>
           </div>
 
-          {/* Right — Illustration */}
-          <div className="flex items-center justify-center">
-            <img
-              src={heroImage}
-              alt="Two professionals in a live video conversation"
-              width={1024}
-              height={896}
-              className="w-full max-w-lg"
-            />
+          {/* Right — Animated Flow */}
+          <div className="flex items-center justify-center lg:justify-end">
+            <HeroAnimation />
           </div>
         </div>
       </div>
