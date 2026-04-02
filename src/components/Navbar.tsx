@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container max-w-6xl mx-auto flex items-center justify-between h-16 px-6">
-        <a href="/" className="text-lg font-bold tracking-tight text-foreground">OnlineChatWorkers</a>
+        <a href="/" className="text-lg tracking-tight text-foreground font-heading"><span className="font-normal">Instant</span><span className="font-bold">Hire</span></a>
 
         <div className="hidden md:flex items-center gap-8">
           <a href="#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">How It Works</a>

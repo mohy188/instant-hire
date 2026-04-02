@@ -14,7 +14,7 @@ const Index = () => {
       <HeroSection />
       <HowItWorks />
       <ComparisonSection />
-      <PricingSection />
+      
       <CategoriesSection />
       <FinalCTA />
       <Footer />

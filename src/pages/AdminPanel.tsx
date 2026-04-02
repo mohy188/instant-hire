@@ -84,7 +84,7 @@ const AdminPanel = () => {
       <nav className="border-b border-border bg-background">
         <div className="container max-w-7xl mx-auto flex items-center justify-between h-16 px-6">
           <div className="flex items-center gap-3">
-            <Link to="/" className="text-lg font-bold tracking-tight text-foreground">OnlineChatWorkers</Link>
+            <Link to="/" className="text-lg tracking-tight text-foreground font-heading"><span className="font-normal">Instant</span><span className="font-bold">Hire</span></Link>
             <span className="text-xs bg-foreground text-background px-2 py-0.5 rounded font-medium">Admin</span>
           </div>
           <div className="flex items-center gap-3">

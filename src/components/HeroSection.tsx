@@ -15,7 +15,7 @@ const HeroSection = () => {
               Face‑to‑Face.
             </h1>
             <p className="text-base md:text-lg text-muted-foreground max-w-md leading-relaxed mb-8">
-              No job posts. No bidding. No escrow. Just real‑time 1‑on‑1 live video hiring — connect with the right person in minutes.
+              No job posts. No bidding. No escrow. Just real‑time 1‑on‑1 live video hiring with end‑to‑end encrypted chat — connect with the right person in minutes.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button size="lg" className="rounded-[7px] font-semibold px-7" asChild>

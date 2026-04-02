@@ -15,7 +15,7 @@ const Dashboard = () => {
     <div className="min-h-screen bg-background">
       <nav className="border-b border-border bg-background">
         <div className="container max-w-6xl mx-auto flex items-center justify-between h-16 px-6">
-          <Link to="/" className="text-lg font-bold tracking-tight text-foreground">OnlineChatWorkers</Link>
+          <Link to="/" className="text-lg tracking-tight text-foreground font-heading"><span className="font-normal">Instant</span><span className="font-bold">Hire</span></Link>
           <div className="flex items-center gap-4">
             <span className="text-sm text-muted-foreground capitalize">{role}</span>
             <Button variant="outline" size="sm" className="rounded-[7px]" onClick={handleSignOut}>Logout</Button>

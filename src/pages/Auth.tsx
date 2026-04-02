@@ -117,7 +117,7 @@ const Auth = () => {
             {isLogin ? "Welcome Back" : "Create Your Account"}
           </h1>
           <p className="text-sm text-muted-foreground text-center mt-2 mb-8">
-            {isLogin ? "Sign in to continue to your account" : "Get started with OnlineChatWorkers"}
+            {isLogin ? "Sign in to continue to your account" : "Get started with InstantHire"}
           </p>
 
           <form onSubmit={isLogin ? handleLogin : handleSignup} className="space-y-4">

@@ -24,7 +24,7 @@ const ComparisonSection = () => {
         <div className="border border-border rounded-xl overflow-hidden">
           <div className="grid grid-cols-3 bg-surface-elevated border-b border-border">
             <div className="p-4 text-sm font-medium text-muted-foreground">Feature</div>
-            <div className="p-4 text-sm font-semibold text-foreground text-center">OnlineChatWorkers</div>
+            <div className="p-4 text-sm font-semibold text-foreground text-center">InstantHire</div>
             <div className="p-4 text-sm font-medium text-muted-foreground text-center">Traditional Platforms</div>
           </div>
           {rows.map((row, i) => (
