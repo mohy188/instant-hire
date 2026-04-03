@@ -17,9 +17,9 @@ const ComparisonSection = () => {
     <section className="py-20 md:py-28 px-6">
       <div className="container max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Switch?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Switch to InstantHire?</h2>
           <p className="text-muted-foreground text-lg max-w-lg mx-auto">
-            Traditional freelance platforms are slow, expensive, and impersonal.
+            Traditional freelance platforms are slow, expensive, and impersonal. InstantHire eliminates all of that.
           </p>
         </div>
 

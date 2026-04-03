@@ -34,8 +34,8 @@ const CategoriesSection = () => {
     <section id="categories" className="py-20 md:py-28 px-6">
       <div className="container max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Browse Categories</h2>
-          <p className="text-muted-foreground text-lg max-w-lg mx-auto">Find talent or opportunities across dozens of professional categories.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">InstantHire Categories</h2>
+          <p className="text-muted-foreground text-lg max-w-lg mx-auto">Subscribe to a category and get matched instantly with the right talent or opportunity.</p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
