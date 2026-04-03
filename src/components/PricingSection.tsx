@@ -7,13 +7,13 @@ const plans = [
     name: "Freelancer",
     price: "$3",
     period: "/ month per category",
-    description: "Join any category, get matched with employers, and interview live.",
+    description: "Get matched with employers in your paid category for the whole month.",
     features: [
       "15-minute 1-on-1 live video session",
       "End-to-end encrypted in-room chat",
       "Equal matching access with employers",
       "Share contact info to move forward",
-      "Unlimited categories (per subscription)",
+      "Only get matched in paid category for whole month",
     ],
     cta: "Join as Freelancer",
     featured: false,
@@ -22,13 +22,13 @@ const plans = [
     name: "Employer",
     price: "$7",
     period: "/ month per category",
-    description: "Join any category, get matched with freelancers, and interview live.",
+    description: "Get matched with freelancers in your paid category for the whole month.",
     features: [
       "15-minute 1-on-1 live video session",
       "End-to-end encrypted in-room chat",
       "Equal matching access with freelancers",
       "Share contact info to move forward",
-      "Unlimited categories (per subscription)",
+      "Only get matched in paid category for whole month",
     ],
     cta: "Join as Employer",
     featured: true,
@@ -40,14 +40,14 @@ const PricingSection = () => {
     <section id="pricing" className="py-20 md:py-28 px-6 bg-surface-elevated">
       <div className="container max-w-5xl mx-auto">
         <div className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Simple, Transparent Pricing</h2>
-          <p className="text-muted-foreground text-lg max-w-lg mx-auto">No hidden fees. No commissions. Just a flat monthly rate per category.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">InstantHire Pricing — Simple & Transparent</h2>
+          <p className="text-muted-foreground text-lg max-w-lg mx-auto">No hidden fees. No commissions. No escrow. Just a flat monthly rate per category.</p>
         </div>
 
         <div className="text-center mb-12">
           <div className="inline-block border border-border rounded-lg px-5 py-3 bg-background">
             <p className="text-sm text-muted-foreground">
-              Each session is <span className="text-foreground font-semibold">15 minutes</span>. If both sides want to continue, share contact info and take it forward — end to end.
+              Each InstantHire session is <span className="text-foreground font-semibold">15 minutes</span>. Want to continue? Share contact info and take it forward — end to end.
             </p>
           </div>
         </div>
