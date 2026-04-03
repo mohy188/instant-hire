@@ -1,34 +1,36 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const plans = [
   {
     name: "Freelancer",
     price: "$3",
     period: "/ month per category",
-    description: "Get discovered by employers looking for your exact skills.",
+    description: "Join any category, get matched with employers, and interview live.",
     features: [
-      "Unlimited video interviews",
-      "Real-time instant matching",
-      "Profile visibility in your categories",
-      "In-room chat & screen sharing",
+      "15-minute 1-on-1 live video session",
+      "End-to-end encrypted in-room chat",
+      "Equal matching access with employers",
+      "Share contact info to move forward",
+      "Unlimited categories (per subscription)",
     ],
-    cta: "Start as Freelancer",
+    cta: "Join as Freelancer",
     featured: false,
   },
   {
     name: "Employer",
     price: "$7",
     period: "/ month per category",
-    description: "Find and interview talent in minutes, not weeks.",
+    description: "Join any category, get matched with freelancers, and interview live.",
     features: [
-      "Unlimited video interviews",
-      "Priority matching queue",
-      "Access to all freelancers in category",
-      "In-room chat & screen sharing",
-      "Candidate bookmarking",
+      "15-minute 1-on-1 live video session",
+      "End-to-end encrypted in-room chat",
+      "Equal matching access with freelancers",
+      "Share contact info to move forward",
+      "Unlimited categories (per subscription)",
     ],
-    cta: "Start Hiring",
+    cta: "Join as Employer",
     featured: true,
   },
 ];
@@ -37,9 +39,17 @@ const PricingSection = () => {
   return (
     <section id="pricing" className="py-20 md:py-28 px-6 bg-surface-elevated">
       <div className="container max-w-5xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Simple, Transparent Pricing</h2>
-          <p className="text-muted-foreground text-lg max-w-lg mx-auto">No hidden fees. No commissions. Just a flat monthly rate.</p>
+          <p className="text-muted-foreground text-lg max-w-lg mx-auto">No hidden fees. No commissions. Just a flat monthly rate per category.</p>
+        </div>
+
+        <div className="text-center mb-12">
+          <div className="inline-block border border-border rounded-lg px-5 py-3 bg-background">
+            <p className="text-sm text-muted-foreground">
+              Each session is <span className="text-foreground font-semibold">15 minutes</span>. If both sides want to continue, share contact info and take it forward — end to end.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -71,8 +81,9 @@ const PricingSection = () => {
               <Button
                 className="w-full rounded-lg font-semibold h-11"
                 variant={plan.featured ? "secondary" : "default"}
+                asChild
               >
-                {plan.cta}
+                <Link to="/auth?mode=signup">{plan.cta}</Link>
               </Button>
             </div>
           ))}

@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Arvo", "serif"],
+        sans: ["Inter", "sans-serif"],
         heading: ["Arvo", "serif"],
       },
       colors: {
